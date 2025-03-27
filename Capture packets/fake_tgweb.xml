@@ -1,0 +1,473 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2023.4" exportTime="Thu Mar 27 18:41:53 CST 2025">
+  <item>
+    <time>Thu Mar 27 18:41:12 CST 2025</time>
+    <url><![CDATA[https://t.ly/TNb1-tg]]></url>
+    <host ip="104.20.6.133">t.ly</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/TNb1-tg]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /TNb1-tg HTTP/2
+Host: t.ly
+Cookie: __cf_bm=UPrP6sMXWs6ks7gshh4BbVg3zECvSvE6tymv7cDakqo-1743072054-1.0.1.1-8XGf1syFTlvJjoaNa2RHJdzzKGXTo8TSBtYTLm.flBV6TJVMEaQYXAYVrzDt4Ml0MXE277aKW4nHVig46.lAStgdVoJUUPjGaK0ySNykE6E
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Dnt: 1
+Sec-Gpc: 1
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+Priority: u=0, i
+Te: trailers
+
+]]></request>
+    <status>302</status>
+    <responselength>1745</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 302 Found
+Date: Thu, 27 Mar 2025 10:41:13 GMT
+Content-Type: text/html; charset=UTF-8
+Location: http://collegctor.org
+Cache-Control: no-cache, private
+X-Robots-Tag: noindex
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Whom: tly-app
+X-Do-App-Origin: 86336e98-11a6-477d-b2fb-e3113d9e1e21
+X-Do-Orig-Status: 302
+Set-Cookie: __cf_bm=fEIAOQOW7r7FsAuKWUBFbYM3QhrfqdGCAXLhLhQlM.A-1743072073-1.0.1.1-uIJqIUTgQ040GHwtFzRDmW9wMaRr8vs2y_n07A_HcnORIjzybJ7BrC9780TCIh20q8kULGFNLby8R23_15c_acUpxJWDTbNYHPae6cwY.ys; path=/; expires=Thu, 27-Mar-25 11:11:13 GMT; domain=.t.ly; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Cf-Cache-Status: BYPASS
+Server-Timing: cfCacheStatus;desc="BYPASS"
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Speculation-Rules: "/cdn-cgi/speculation"
+Server: cloudflare
+Cf-Ray: 926e462a3903e38b-NRT
+Alt-Svc: h3=":443"; ma=86400
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="0;url='http://collegctor.org'" />
+
+        <title>Redirecting to http://collegctor.org</title>
+    </head>
+    <body>
+        Redirecting to <a href="http://collegctor.org">http://collegctor.org</a>.
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"926e462a3903e38b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.1.0","token":"dee7d9f0fb9f44f88910a42900dda958"}' crossorigin="anonymous"></script>
+</body>
+</html>]]></response>
+    <comment><![CDATA[Linkfinder (2), Sensitive Field (1)]]></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://t.me/_websync_?authed=0&version=10.4.1+A]]></url>
+    <host ip="149.154.167.99">t.me</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/_websync_?authed=0&version=10.4.1+A]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /_websync_?authed=0&version=10.4.1+A HTTP/1.1
+Host: t.me
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: https://tg.tgackiouc.com/
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: cross-site
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>465</responselength>
+    <mimetype>text</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 200 OK
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4
+Set-Cookie: stel_web_auth=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Set-Cookie: stel_web_force=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Pragma: no-cache
+Cache-Control: no-store
+Strict-Transport-Security: max-age=35768000
+
+true]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://telegram.me/_websync_?authed=0&amp;version=10.4.1+A]]></url>
+    <host ip="149.154.167.99">telegram.me</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/_websync_?authed=0&amp;version=10.4.1+A]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /_websync_?authed=0&amp;version=10.4.1+A HTTP/1.1
+Host: telegram.me
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=4
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>465</responselength>
+    <mimetype>text</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 200 OK
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4
+Set-Cookie: stel_web_auth=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Set-Cookie: stel_web_force=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Pragma: no-cache
+Cache-Control: no-store
+Strict-Transport-Security: max-age=35768000
+
+true]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://t.me/_websync_?authed=0&amp;version=10.4.1+A]]></url>
+    <host ip="149.154.167.99">t.me</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/_websync_?authed=0&amp;version=10.4.1+A]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /_websync_?authed=0&amp;version=10.4.1+A HTTP/1.1
+Host: t.me
+Cookie: stel_on=1; stel_dt=-480; stel_ssid=a8a7cdd6ac9cd8a06f_4937517721190369254
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=4
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>465</responselength>
+    <mimetype>text</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 200 OK
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4
+Set-Cookie: stel_web_auth=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Set-Cookie: stel_web_force=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Pragma: no-cache
+Cache-Control: no-store
+Strict-Transport-Security: max-age=35768000
+
+true]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://telegram.me/_websync_?authed=0&version=10.4.1+A]]></url>
+    <host ip="149.154.167.99">telegram.me</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/_websync_?authed=0&version=10.4.1+A]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /_websync_?authed=0&version=10.4.1+A HTTP/1.1
+Host: telegram.me
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Referer: https://tg.tgackiouc.com/
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: script
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: cross-site
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>200</status>
+    <responselength>465</responselength>
+    <mimetype>text</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 200 OK
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 4
+Set-Cookie: stel_web_auth=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Set-Cookie: stel_web_force=DELETED; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/; samesite=None; secure; HttpOnly
+Pragma: no-cache
+Cache-Control: no-store
+Strict-Transport-Security: max-age=35768000
+
+true]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://collegctor.org/sw-d32a1409.js]]></url>
+    <host ip="101.33.76.53">collegctor.org</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/sw-d32a1409.js]]></path>
+    <extension>js</extension>
+    <request base64="false"><![CDATA[GET /sw-d32a1409.js HTTP/2
+Host: collegctor.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Service-Worker: script
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: serviceworker
+Sec-Fetch-Mode: same-origin
+Sec-Fetch-Site: same-origin
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+If-Modified-Since: Mon, 22 Jan 2024 15:05:21 GMT
+If-None-Match: W/"65ae8431-6e36"
+Priority: u=4
+Cache-Control: max-age=0
+Te: trailers
+
+]]></request>
+    <status>304</status>
+    <responselength>263</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/2 304 Not Modified
+Server: nginx
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Last-Modified: Mon, 22 Jan 2024 15:05:21 GMT
+Etag: "65ae8431-6e36"
+Expires: Thu, 27 Mar 2025 22:41:15 GMT
+Cache-Control: max-age=43200
+Strict-Transport-Security: max-age=31536000
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:14 CST 2025</time>
+    <url><![CDATA[https://tg.tgackiouc.com/9294.26a038c0116001ad0f75.js]]></url>
+    <host ip="150.109.84.82">tg.tgackiouc.com</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/9294.26a038c0116001ad0f75.js]]></path>
+    <extension>js</extension>
+    <request base64="false"><![CDATA[GET /9294.26a038c0116001ad0f75.js HTTP/1.1
+Host: tg.tgackiouc.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Service-Worker: script
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: serviceworker
+Sec-Fetch-Mode: same-origin
+Sec-Fetch-Site: same-origin
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+If-Modified-Since: Thu, 28 Dec 2023 14:37:40 GMT
+If-None-Match: W/"658d8834-2747"
+Priority: u=4
+Cache-Control: max-age=0
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>304</status>
+    <responselength>263</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/2 304 Not Modified
+Server: nginx
+Date: Thu, 27 Mar 2025 10:41:15 GMT
+Last-Modified: Thu, 28 Dec 2023 14:37:40 GMT
+Etag: "658d8834-2747"
+Expires: Thu, 27 Mar 2025 22:41:15 GMT
+Cache-Control: max-age=43200
+Strict-Transport-Security: max-age=31536000
+
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:15 CST 2025</time>
+    <url><![CDATA[https://zws2.web.telegram.org/apiw1]]></url>
+    <host ip="149.154.167.99">zws2.web.telegram.org</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[POST]]></method>
+    <path><![CDATA[/apiw1]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[POST /apiw1 HTTP/1.1
+Host: zws2.web.telegram.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Content-Length: 0
+Referer: https://tg.tgackiouc.com/
+Origin: https://tg.tgackiouc.com
+Dnt: 1
+Sec-Gpc: 1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+X-Forwarded-For: 127.0.0.1
+X-Originating-Ip: 127.0.0.1
+X-Remote-Ip: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+Priority: u=4
+Te: trailers
+Connection: close
+
+]]></request>
+    <status>404</status>
+    <responselength>460</responselength>
+    <mimetype>HTML</mimetype>
+    <response base64="false"><![CDATA[HTTP/2 404 Not Found
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:16 GMT
+Content-Type: text/html
+Content-Length: 169
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, OPTIONS
+Access-Control-Allow-Headers: origin, content-type
+Access-Control-Max-Age: 1728000
+
+<html>
+<head><title>404 Not Found</title></head>
+<body bgcolor="white">
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/0.3.33</center>
+</body>
+</html>
+]]></response>
+    <comment></comment>
+  </item>
+  <item>
+    <time>Thu Mar 27 18:41:19 CST 2025</time>
+    <url><![CDATA[https://zws2.web.telegram.org/apiws]]></url>
+    <host ip="149.154.167.99">zws2.web.telegram.org</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/apiws]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /apiws HTTP/1.1
+Host: zws2.web.telegram.org
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+Accept: */*
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Sec-WebSocket-Version: 13
+Origin: https://tg.tgackiouc.com
+Sec-WebSocket-Protocol: binary
+Sec-WebSocket-Key: af8q8SUz6MUGzrjFevgZ9Q==
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive, Upgrade
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: websocket
+Sec-Fetch-Site: cross-site
+X-Forwarded-For: 127.0.0.1
+X-Originating-IP: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+]]></request>
+    <status>101</status>
+    <responselength>220</responselength>
+    <mimetype></mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 101 Switching Protocols
+Server: nginx/1.18.0
+Date: Thu, 27 Mar 2025 10:41:20 GMT
+Connection: upgrade
+Upgrade: websocket
+Sec-WebSocket-Accept: R0wTulqF4uz8dbo0jI3Y1oPYdeI=
+Sec-WebSocket-Protocol: binary
+
+]]></response>
+    <comment></comment>
+  </item>
+</items>
